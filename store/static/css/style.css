@@ -2,10 +2,9 @@ body {
     margin: 0;
 }
 .header {
-    background-image: url('../img/back-2.jpg');
-    background-color: rgb(199, 152, 94);
+    background-image: url('../img/shop-back.jpg');
     background-size: cover;
-    height: 140vh;
+    height: 130vh;
 }
 .container {
     margin: 0px 100px;
@@ -31,7 +30,7 @@ body {
 }
 .searchTerm {
     width: 100%;
-    border: 3px solid #729668;
+    border: 3px solid #243c1e;
     border-right: none;
     height: 18px;
     padding: 10px;
@@ -45,8 +44,8 @@ body {
 .searchButton {
     width: 40px;
     height: 44px;
-    border: 1px solid #729668;
-    background: #729668;
+    border: 1px solid #243c1e;
+    background: #243c1e;
     text-align: center;
     color: #eeeeee;
     border-radius: 0 5px 5px 0;
@@ -75,22 +74,26 @@ body {
     color: #eeeeee;
 }
 .header-down {
-    color: aliceblue;
+    color: rgb(45, 37, 37);
     position: relative;
+}
+.header-down span {
+    color:#3d6034;
 }
 .header-text {
     text-align: center;
     position: absolute;
-    left: 6%;
-    margin-top: 230px;
+    left: 11%;
+    margin-top: 290px;
     font-family: 'Tinos', serif;
     font-size: 63px;
     font-weight: 400px;
 }
 .header-sub {
     margin-top: 8px;
-    color: #eeeeee;
+    color: #000000;
     font-size: 19px;
+    font-weight: 400px;
     font-family: 'Open Sans', sans-serif;
     
 }
@@ -99,7 +102,7 @@ body {
     content: '';
     height: 3px;
     width: 35px;
-    background-color: #729668;
+    background-color: #3d6034;
     top: 110px;
     left: 26px;
 }
@@ -108,7 +111,7 @@ body {
     content: '';
     height: 3px;
     width: 35px;
-    background-color: #729668;
+    background-color: #3d6034;
     top: 112px;
     left: 332px;
 }
@@ -137,10 +140,10 @@ body {
 }
 .card-text {
     font-family: 'Tinos', serif;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 400px;
-    display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -150,4 +153,11 @@ body {
     font-weight: 400px;
     text-align: center;
     color: #656363;
+    padding: 0px 25px;
+}
+.card-text span {
+    color:#729668;
+}
+.card-description span {
+    color:#729668;
 }
