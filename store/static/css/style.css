@@ -6,11 +6,16 @@ body {
     background-size: cover;
     height: 130vh;
 }
+.header-main {
+    background-color: #57773c; 
+    height: 11vh;
+}
 .container {
     margin: 0px 100px;
 }
 .header-line {
-    padding-top: 65px;
+    position: fixed;
+    padding-top: 45px;
     display: flex;
     align-items: center;
     position: relative;
@@ -59,19 +64,23 @@ body {
 }
 .profile {
     position: absolute;
-    left: 90%;
+    left: 85%;
 }
 .profile-text {
     font-size: 15px;
     color: #eeeeee;
 }
+.delivery {
+    position: absolute;
+    left: 93%;
+}
 .cart {
     position: absolute;
-    left: 97%;
+    left: 100%;
 }
 .cart-text {
     font-size: 15px;
-    color: #eeeeee;
+    color: #eeeeee
 }
 .header-down {
     color: rgb(45, 37, 37);
@@ -83,8 +92,8 @@ body {
 .header-text {
     text-align: center;
     position: absolute;
-    left: 11%;
-    margin-top: 290px;
+    left: 9%;
+    margin-top: 310px;
     font-family: 'Tinos', serif;
     font-size: 63px;
     font-weight: 400px;
