@@ -1,14 +1,17 @@
 body {
     margin: 0;
 }
+header {
+    background-color: #c2c97d; 
+    height: 11vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
 .header {
     background-image: url('../img/shop-back.jpg');
     background-size: cover;
     height: 130vh;
-}
-.header-main {
-    background-color: #57773c; 
-    height: 11vh;
 }
 .container {
     margin: 0px 100px;
