@@ -14,7 +14,7 @@ header {
     height: 130vh;
 }
 .container {
-    margin: 0px 100px;
+    margin: 0px 166px;
 }
 .header-line {
     position: fixed;
@@ -171,25 +171,73 @@ header {
     color:#729668;
 }
 
+
 .about {
     margin-top: 166px;
 }
-.about-title {
+.about-text {
     font-family: 'Tinos', serif;
     font-size: 54px;
     font-weight: 400px;
     color: rgb(45, 37, 37);
-    font-weight: 444px;
+    width: 444px;
     text-align: center;
-    margin-top: 21px;
 }
-.about-title span{
+.about-text span{
     color: #729668;
 }
 .about-desc {
-    color: #656363;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 444px;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    width: 444px;
+    color: #656363;
     text-align: center;
+    margin-top: 21px;
+}
+.about-items {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-left: 34px;
+    margin-top: 79px;
+
+}
+.about-icons {
+    margin-right: 60px;
+    font-family: 'Tinos', serif;
+    font-size: 17px;
+    font-weight: 400px;
+    text-align: center;
+    color: #656363;
+}
+.about-icons span {
+    display: block;
+}
+.about-holder {
+    display: flex;
+    justify-content: space-between;
+}
+.about-images {
+    position: relative;
+    margin-top: 45px;
+    right: 50px;
+}
+.images-1 {
+    position: absolute;
+    z-index: 0;
+    top: -92px;
+    right: 38px;
+}
+.images-2 {
+    position: absolute;
+    z-index: 0;
+    top: -70px;
+    right: 180px;
+}
+.images-3 {
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    right: -40px;
 }
