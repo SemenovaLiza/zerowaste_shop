@@ -3,12 +3,12 @@ body {
 }
 header {
     background-color: #b3ba71; 
-    height: 11vh;
+    height: 9vh;
     width: 100%;
     position: fixed;
     z-index: 3;
 }
-.header {
+.header-down {
     background-image: url('../img/shop-back.jpg');
     background-size: cover;
     height: 130vh;
@@ -18,7 +18,7 @@ header {
 }
 .header-line {
     position: fixed;
-    padding-top: 45px;
+    padding-top: 38px;
     display: flex;
     align-items: center;
     position: relative;
@@ -38,7 +38,7 @@ header {
 }
 .searchTerm {
     width: 100%;
-    border: 3px solid #243c1e;
+    border: 3px solid #729668;
     border-right: none;
     height: 18px;
     padding: 10px;
@@ -52,8 +52,8 @@ header {
 .searchButton {
     width: 40px;
     height: 44px;
-    border: 1px solid #243c1e;
-    background: #243c1e;
+    border: 1px solid #729668;
+    background: #729668;
     text-align: center;
     color: #eeeeee;
     border-radius: 0 5px 5px 0;
@@ -85,21 +85,18 @@ header {
     font-size: 15px;
     color: #eeeeee
 }
-.header-down {
-    color: rgb(45, 37, 37);
-    position: relative;
-}
-.header-down span {
-    color:#3d6034;
+.header-down-text span {
+    color:#729668;
 }
 .header-text {
     text-align: center;
     position: absolute;
-    left: 9%;
-    margin-top: 310px;
+    left: 13%;
+    margin-top: 360px;
     font-family: 'Tinos', serif;
     font-size: 63px;
     font-weight: 400px;
+    color: rgb(45, 37, 37);
 }
 .header-sub {
     margin-top: 8px;
@@ -114,7 +111,7 @@ header {
     content: '';
     height: 3px;
     width: 35px;
-    background-color: #3d6034;
+    background-color: #729668;
     top: 110px;
     left: 26px;
 }
@@ -123,7 +120,7 @@ header {
     content: '';
     height: 3px;
     width: 35px;
-    background-color: #3d6034;
+    background-color: #729668;
     top: 112px;
     left: 332px;
 }
@@ -137,8 +134,7 @@ header {
     margin-top: -140px;
     margin-right: 31px;
     box-shadow: 10px 10px 40px 20px #0000001A;
-    padding: 0px 10px;
-
+    padding: 10px 10px 35px 10px;
     transition: 1s;
 }
 .card:hover {
@@ -158,6 +154,7 @@ header {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: rgb(45, 37, 37);
 }
 .card-description {
     font-family: 'Tinos', serif;
@@ -172,4 +169,27 @@ header {
 }
 .card-description span {
     color:#729668;
+}
+
+.about {
+    margin-top: 166px;
+}
+.about-title {
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    font-weight: 400px;
+    color: rgb(45, 37, 37);
+    font-weight: 444px;
+    text-align: center;
+    margin-top: 21px;
+}
+.about-title span{
+    color: #729668;
+}
+.about-desc {
+    color: #656363;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 444px;
+    text-align: center;
 }
