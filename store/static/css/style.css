@@ -171,6 +171,7 @@ header {
 
 .about {
     margin-top: 166px;
+    padding-bottom: 200px;
 }
 .about-text {
     font-family: 'Tinos', serif;
@@ -223,19 +224,63 @@ header {
 }
 .images-1 {
     position: absolute;
-    z-index: 0;
     top: -92px;
     right: 38px;
 }
 .images-2 {
     position: absolute;
-    z-index: 0;
     top: -70px;
     right: 180px;
 }
 .images-3 {
     position: absolute;
-    z-index: 999;
     top: 100px;
     right: -40px;
+}
+.info {
+    background-image: url('../img/info.jpg');
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 40vh;
+    background-size: cover;
+}
+.info-title {
+    font-family: 'Tinos', serif;
+    font-size: 52px;
+    font-weight: 400px;
+    color: rgb(45, 37, 37);
+    margin-bottom: 20px;
+}
+.left {
+    margin-right: 300px;
+}
+.info-title span {
+    color: #729668;
+}
+.info-desc {
+    font-size: 17px;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    width: 444px;
+    color: #221f1f;
+    text-align: center;
+}
+.info-btn {
+    background-color: #729668;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 400px;
+    transition: background-color 0.3s linear;
+}
+.info-btn:hover {
+    background-color: #b3ba71;
+    
+}
+.block-holder {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 24%;
 }
