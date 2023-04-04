@@ -17,7 +17,6 @@ header {
     margin: 0px 166px;
 }
 .header-line {
-    position: fixed;
     padding-top: 38px;
     display: flex;
     align-items: center;
@@ -65,25 +64,23 @@ header {
     position: absolute;
     left: 25%;
 }
-.profile {
+.header-items {
     position: absolute;
-    left: 85%;
+    left: 86%;
+    display: flex;
+    margin-right: 60px;
 }
-.profile-text {
+.header-item {
+    margin-right: 40px;
+    text-align: center;
+}
+.header-item span {
     font-size: 15px;
     color: #eeeeee;
+    display: block;
 }
-.delivery {
-    position: absolute;
-    left: 93%;
-}
-.cart {
-    position: absolute;
-    left: 100%;
-}
-.cart-text {
-    font-size: 15px;
-    color: #eeeeee
+.header-item a {
+    text-decoration: none;
 }
 .header-down-text span {
     color:#729668;
@@ -209,10 +206,11 @@ header {
     font-size: 17px;
     font-weight: 400px;
     text-align: center;
-    color: #656363;
+    color: #729668;
 }
 .about-icons span {
     display: block;
+    text-decoration: none;
 }
 .about-holder {
     display: flex;
