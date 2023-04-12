@@ -285,3 +285,12 @@ header {
 .info-button {
     margin-top: 120px;
 }
+footer {
+    background-color: #b3ba71;
+    margin-top: 100px;
+}
+.footer-holder {
+    padding-top: 40px;
+    display: flex;
+}
+.
