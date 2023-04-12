@@ -241,8 +241,7 @@ header {
     background-image: url('../img/info.jpg');
     padding: 80px 0;
     background-repeat: no-repeat;
-    position: relative;
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
 }
 .info-title {
@@ -252,35 +251,37 @@ header {
     color: rgb(45, 37, 37);
     margin-bottom: 20px;
 }
-.left {
-    margin-right: 300px;
-}
 .info-title span {
     color: #729668;
-}
-.info-desc {
-    font-size: 17px;
-    font-weight: 400px;
-    font-family: 'Open Sans', sans-serif;
-    width: 444px;
-    color: #221f1f;
-    text-align: center;
 }
 .info-btn {
     background-color: #729668;
     color: #eeeeee;
     text-decoration: none;
-    padding: 14px 18px;
-    font-weight: 400px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 15px 35px;
+    border: 3px solid #b3ba71;
+    font-weight: 500px;
+    font-size: 20px;
     transition: background-color 0.3s linear;
 }
 .info-btn:hover {
     background-color: #b3ba71;
+    border: 3px solid #729668;
     
 }
-.block-holder {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    right: 24%;
+.info-holder {
+    text-align: center;
+}
+.info-description {
+    font-size: 17px;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    color: #221f1f;
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 54px;
+}
+.info-button {
+    margin-top: 120px;
 }
