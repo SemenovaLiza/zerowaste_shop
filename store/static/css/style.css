@@ -25,12 +25,7 @@ header {
 .header-logo {
     padding-top: 10px;
     position: absolute;
-    right: 88%;
-}
-.nav {
-    position: absolute;
-    right: 102%;
-    color: #eeeeee;
+    right: 99%;
 }
 .search {
     display: flex;
@@ -286,11 +281,28 @@ header {
     margin-top: 120px;
 }
 footer {
-    background-color: #b3ba71;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 .footer-holder {
     padding-top: 40px;
     display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400px;
 }
-.
+.footer-holder span {
+    color: #727272;
+    font-weight: 500;
+
+}
+.footer-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    color: #729668;
+}
+
+.middle-footer {
+    margin-right: 200px;
+}

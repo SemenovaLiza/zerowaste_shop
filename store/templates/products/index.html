@@ -1,196 +1,125 @@
-<!DOCTYPE html> 
-<html lang="ru">
+{% extends 'base.html' %}
 {% load static %}
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class='container'>
-        <div class='header-line'>
-          <div class='nav'>
-            CAT
-          </div>
-          <div class='header-logo'>
+{% block content %}  
+  <div class='header-down'>
+    <div class='header-text'>
+      Welcome to the
+      <div class='header-down-text'>
+        <span>R</span>ainy<span>D</span>ay
+      </div>
+      <div class='header-sub'>
+        ZERO WASTE SHOP
+      </div>          
+    </div>
+  </div>
+  <div class='cards'>
+    <div class='container'>
+      <div class='cards-holder'>
+        <div class='card'>
+          <div class='card-image'>
             <a href='*'>
-              <img src='static/img/white-logo.png' width="130" height="130">
+              <img src='static/img/kitchen-items-warm.png' width="250" height="250">
             </a>
           </div>
-          <div class="wrap">
-            <div class="search">
-              <input type="text" class="searchTerm" placeholder="Type">                
-              <button type="submit" class="searchButton">
-                <a href='*'>
-                  <img src='static/img/search-white-16.png'>
-                </a>
-              </button>
-            </div>
+          <div class='card-text'>
+            <span>Kitchen</span> items
           </div>
-
-          <div class='header-items'>
-            <div class='header-item'>
-              <a href='f'>
-                <img src='static/img/delivery.png'> <span>Delivery</span>
-              </a>
-            </div>
-            <div class='header-item'>
-              <a href='f'>
-                <img src='static/img/profile.png'> <span>Profile</span>
-              </a>
-            </div>
-            <div class='header-item'>
-              <a href='f'>
-                <img src='static/img/cart.png'> <span>Cart</span>
-              </a>
-            </div>
+          <div class='card-description'>
+            Our cooking utensils made with 100% bamboo or metal. 
+            These not only last longer than utensils made with plastic,
+            but they are a more sustainable choice, too.
           </div>
-
         </div>
-      </div>
-    </header>
-    <div class='header-down'>
-      <div class='header-text'>
-        Welcome to the
-        <div class='header-down-text'>
-          <span>R</span>ainy<span>D</span>ay
+        <div class='card'>
+          <div class='card-image'>
+            <a href='*'>
+              <img src='static/img/bath-items-warm.jpg' width="250" height="250">
+            </a>
+          </div>
+          <div class='card-text'>
+            <span>Bath</span> items
+          </div>
+          <div class='card-description'>
+            Most of our bath products are sold in small jars,
+            which will not only fit perfectly into your interior, but which can be reused.
+            Our products are hypoallergenic and with a high content of natural ingredients.
+          </div>
         </div>
-        <div class='header-sub'>
-          ZERO WASTE SHOP
-        </div>          
-      </div>
-    </div>
-    <div class='cards'>
-      <div class='container'>
-        <div class='cards-holder'>
-          <div class='card'>
-            <div class='card-image'>
-              <a href='*'>
-                <img src='static/img/kitchen-items-warm.png' width="250" height="250">
-              </a>
-            </div>
-            <div class='card-text'>
-              <span>Kitchen</span> items
-            </div>
-            <div class='card-description'>
-              Our cooking utensils made with 100% bamboo or metal. 
-              These not only last longer than utensils made with plastic,
-              but they are a more sustainable choice, too.
-            </div>
+        <div class='card'>
+          <div class='card-image'>
+            <a href='*'>
+              <img src='static/img/clothes-warm.jpg' width="250" height="250">
+            </a>
           </div>
-          <div class='card'>
-            <div class='card-image'>
-              <a href='*'>
-                <img src='static/img/bath-items-warm.jpg' width="250" height="250">
-              </a>
-            </div>
-            <div class='card-text'>
-              <span>Bath</span> items
-            </div>
-            <div class='card-description'>
-              Most of our bath products are sold in small jars,
-              which will not only fit perfectly into your interior, but which can be reused.
-              Our products are hypoallergenic and with a high content of natural ingredients.
-            </div>
+          <div class='card-text'>
+            <span>Сlothes</span>
           </div>
-          <div class='card'>
-            <div class='card-image'>
-              <a href='*'>
-                <img src='static/img/clothes-warm.jpg' width="250" height="250">
-              </a>
-            </div>
-            <div class='card-text'>
-              <span>Сlothes</span>
-            </div>
-            <div class='card-description'>
-              Clothing that will last longer due to the
-              high quality of the natural fabrics from which it is made.
-            </div>
+          <div class='card-description'>
+            Clothing that will last longer due to the
+            high quality of the natural fabrics from which it is made.
           </div>
         </div>
       </div>
     </div>
-    <div class='about'>
-      <div class='container'>
-        <div class='about-holder'>
-          <div class='about-info'>
-            <div class='about-text'>
-              <span>About</span> RainyDay
+  </div>
+  <div class='about'>
+    <div class='container'>
+      <div class='about-holder'>
+        <div class='about-info'>
+          <div class='about-text'>
+            <span>About</span> RainyDay
+          </div>
+          <div class='about-desc'>
+            The history of our store began with the association of 8 volunteers
+            who were not indifferent to the fate of our planet.
+            Now our team is growing and we are cooperating with various foundations,
+            ranging from foundations where clothes are handed over for recycling,
+            ending with a foundation that grows bamboo, from which we produce our
+            home and personal care products. You can also take part in the development
+            of our store, you can learn more about this in the "delivery" section.
+          </div>
+          <div class='about-items'>
+            <div class='about-icons'>
+              <img src='static/img/bamboo-icon.png'> <span>use bamboo</span>
             </div>
-            <div class='about-desc'>
-              The history of our store began with the association of 8 volunteers
-              who were not indifferent to the fate of our planet.
-              Now our team is growing and we are cooperating with various foundations,
-              ranging from foundations where clothes are handed over for recycling,
-              ending with a foundation that grows bamboo, from which we produce our
-              home and personal care products. You can also take part in the development
-              of our store, you can learn more about this in the "delivery" section.
+            <div class='about-icons'>
+              <img src='static/img/volunteer-icon.png'> <span>cooperate with volunteers</span>
             </div>
-            <div class='about-items'>
-              <div class='about-icons'>
-                <img src='static/img/bamboo-icon.png'> <span>use bamboo</span>
-              </div>
-              <div class='about-icons'>
-                <img src='static/img/volunteer-icon.png'> <span>cooperate with volunteers</span>
-              </div>
-              <div class='about-icons'>
-                <img src='static/img/reuse-icon.png'> <span>reuse the packaging</span>
-              </div>
+            <div class='about-icons'>
+              <img src='static/img/reuse-icon.png'> <span>reuse the packaging</span>
             </div>
           </div>
-
-          <div class='about-images'>
-            <img class='images-1' src='static/img/bamboo-image.jpg' width="255" height="430">
-            <img class='images-3' src='static/img/produce-image.jpg' width="200" height="270">
-            <img class='images-2' src='static/img/produce-2-image.jpg' width="210" height="310">
-          </div>
+        </div>
+        <div class='about-images'>
+          <img class='images-1' src='static/img/bamboo-image.jpg' width="255" height="430">
+          <img class='images-3' src='static/img/produce-image.jpg' width="200" height="270">
+          <img class='images-2' src='static/img/produce-2-image.jpg' width="210" height="310">
         </div>
       </div>
     </div>
-    <div class='info'>
-      <div class='container'>
-        <div class='info-holder'>
-          <div class='info-title'>
-            <span>What</span> Zero Waste is?
-          </div>
-          <div class='info-description'>
-            Zero Waste is a concept of production and consumption
-            leading to a reduction in the amount of waste.
-            In zero waste stores you can buy cosmetics in solid
-            form and without packaging. This will reduce the use of resources
-            for packaging and less garbage is generated after using the product.
-            A few more words about solid products — these are the products of the future. 
-            All the advantages of the Zero Waste concept in them are realized in the absolute.
-            Much less packaging materials are required for transportation than for products
-            in containers. Storage space is needed,
-            on average, two times less. It is also a convenience in traveling.
-          </div>
-          <div class='info-button'>
-            <a href='d' class='info-btn'>start shopping</a>
-          </div>
+  </div>
+  <div class='info'>
+    <div class='container'>
+      <div class='info-holder'>
+        <div class='info-title'>
+          <span>What</span> Zero Waste is?
+        </div>
+        <div class='info-description'>
+          Zero Waste is a concept of production and consumption
+          leading to a reduction in the amount of waste.
+          In zero waste stores you can buy cosmetics in solid
+          form and without packaging. This will reduce the use of resources
+          for packaging and less garbage is generated after using the product.
+          A few more words about solid products — these are the products of the future. 
+          All the advantages of the Zero Waste concept in them are realized in the absolute.
+          Much less packaging materials are required for transportation than for products
+          in containers. Storage space is needed,
+          on average, two times less. It is also a convenience in traveling.
+        </div>
+        <div class='info-button'>
+          <a href='d' class='info-btn'>start shopping</a>
         </div>
       </div>
-    </div>  
-    <footer>
-      <div class='footer-holder'>
-        <div class='left'>
-          If you have any question about our products<br>
-          You may call by this number: ****<br>
-          Or send us an email: rainyday@noreply<br>
-          Rainy Day site's developer: Semenova Elizaveta
-        </div>
-        <div class='tight'>
-          <a href='1'>Categories</a><br>
-          <a href='1'>Favorites</a><br>
-          <a href='1'>Money Account</a><br>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+    </div>
+  </div>  
+{% endblock %}
