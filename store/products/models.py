@@ -7,7 +7,7 @@ User = get_user_model()
 class Category(models.Model):
     """for admin."""
     title = models.CharField(
-        'Category name',
+        verbose_name='Category name',
         max_length=200
     )
     slug = models.SlugField(unique=True)
@@ -21,9 +21,9 @@ class Type(models.Model):
     """for admin."""
     category = models.ForeignKey(
         Category,
-        'Category',
         on_delete=models.PROTECT,
-        related_name='category'
+        related_name='category',
+        verbose_name='Category'
     )
     slug = models.SlugField(unique=True)
 
@@ -35,28 +35,27 @@ class Type(models.Model):
 class Product(models.Model):
     """for users."""
     price = models.DecimalField(
-        'Product price',
+        verbose_name='Product price',
         max_digits=7,
         decimal_places=2
     )
     description = models.TextField(
-        'Type of product',
+        verbose_name='Type of product',
         help_text='Type the product description'
     )
     type = models.ForeignKey(
         Type,
-        blank=False,
         on_delete=models.PROTECT,
         related_name='type',
+        blank=False,
         verbose_name='Type of product',
         help_text='What type of product does your product belong to?'
     )
     seller = models.ForeignKey(
         User,
-        'Seller',
         on_delete=models.CASCADE,
         related_name='seller',
-        verbose_name='seller'
+        verbose_name='Seller'
     )
 
     class Meta:
