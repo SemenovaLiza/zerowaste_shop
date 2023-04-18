@@ -1,32 +1,64 @@
 from django.db import models
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
+
+class Category(models.Model):
+    """for admin."""
+    title = models.CharField(
+        'Category name',
+        max_length=200
+    )
+    slug = models.SlugField(unique=True)
+
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
+
+
+class Type(models.Model):
+    """for admin."""
+    category = models.ForeignKey(
+        Category,
+        'Category',
+        on_delete=models.PROTECT,
+        related_name='category'
+    )
+    slug = models.SlugField(unique=True)
+
+    class Meta:
+        verbose_name = 'Type'
+        verbose_name_plural = 'Types'
 
 
 class Product(models.Model):
-    product = models.CharField(max_length=200)
-    title = models.CharField(max_length=200)
-    price = models.IntegerField()
+    """for users."""
+    price = models.DecimalField(
+        'Product price',
+        max_digits=7,
+        decimal_places=2
+    )
     description = models.TextField(
-        'description',
-        help_text='Describe the product.'
+        'Type of product',
+        help_text='Type the product description'
     )
-    # seller =
-    # reviews =
-
-class Categories(models.Model):
-    slug = models.SlugField(unique=True)
-
-
-class Sort(models.Model):
-    category = models.ForeignKey(
-        Categories,
+    type = models.ForeignKey(
+        Type,
+        blank=False,
+        on_delete=models.PROTECT,
+        related_name='type',
+        verbose_name='Type of product',
+        help_text='What type of product does your product belong to?'
+    )
+    seller = models.ForeignKey(
+        User,
+        'Seller',
         on_delete=models.CASCADE,
-        related_name='sorts',
-        verbose_name='sort of product',
-        help_text='Сhoose the sort of the product.'
+        related_name='seller',
+        verbose_name='seller'
     )
-    products = models.ForeignKey(
-        Product,
-        null=True,
-        related_name='sort',
-        verbose_name='product'
-    )
+
+    class Meta:
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'
