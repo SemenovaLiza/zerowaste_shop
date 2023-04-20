@@ -22,7 +22,7 @@ class Type(models.Model):
     category = models.ForeignKey(
         Category,
         on_delete=models.PROTECT,
-        related_name='category',
+        related_name='types',
         verbose_name='Category'
     )
     slug = models.SlugField(unique=True)
@@ -40,13 +40,13 @@ class Product(models.Model):
         decimal_places=2
     )
     description = models.TextField(
-        verbose_name='Type of product',
-        help_text='Type the product description'
+        verbose_name='Product description',
+        help_text='Describe your product'
     )
     type = models.ForeignKey(
         Type,
         on_delete=models.PROTECT,
-        related_name='type',
+        related_name='products',
         blank=False,
         verbose_name='Type of product',
         help_text='What type of product does your product belong to?'
@@ -54,7 +54,7 @@ class Product(models.Model):
     seller = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='seller',
+        related_name='products',
         verbose_name='Seller'
     )
 
